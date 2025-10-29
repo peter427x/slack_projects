@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moves'n'tv</title>
+</head>
+
+<body>
+    <header>
+        <h1>Movies that'll take you through Time</h1>
+        <h2>Interstellar</h2>
+        <img src="imgs/interstellar1.jpeg" width="600px" height="350px" alt="Interstellar Spaceship">
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Planet</th>
+                    <th rowspan="2">Time spent</th>
+                    <th>Equivalent Time </th>
+                    <th>Reason</th>
+                </tr>
+                <tr>
+                    <th>passed on Earth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miller's Planet</td>
+                    <td>3 hours</td>
+                    <td>21 years</td>
+                    <td>massive Gravity of Black Hole</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>The Dance of Time and Relativity!</h3>
+        <form action="https://de.wikipedia.org/wiki/Interstellar" target="_blank">
+            <p>If the team stayed for a single day, how many years would pass on Earth?</p>
+            <section>
+                <input type="radio" name="time" id="200">
+                <label for="200">200 years</label>
+                <input type="radio" name="time" id="156">
+                <label for="156">156 years</label>
+                <input type="radio" name="time" id="168" required>
+                <label for="168">168 years</label>
+                <input type="radio" name="time" id="100">
+                <label for="100">100 years</label>
+            </section>
+            <button type="submit" onclick="if(!document.getElementById('168').checked) return false;">Einstein!</button>
+            <!--chatgpt helped me block all the wrong answers (onclick=return false)-->
+        </form>
+    </main>
+    <hr>
+    <main>
+        <header>
+            <h2>Tenet</h2>
+            <img src="imgs/tenet1.jpg" alt="Tenet Goat Pic" width="600" height="350">
+        </header>
+        <form action="https://de.wikipedia.org/wiki/Tenet_(Film)" target="_blank">
+            <div>
+                <p><u>“Only Those Who Master Time May Enter the Inversion”</u></p>
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" placeholder="first name" required>
+            </div>
+            <div>
+                <label for="tsrit">emaN tsriT</label>
+                <input type="text" name="tirst" id="tirst" placeholder="name backwards" required>
+                <!-- you can write whatever since html doesn't allow for interlinked inputs that depend on each other (as far as I know) -->
+            </div>
+            <div>
+                <p>Both sliders depict Time. Time can run <b>forward</b> and <b>backward</b> (if you have 2 mice it
+                    might
+                    <br>
+                    as well run in <i>both directions</i> at the <i>same time</i>.)
+                </p>
+                <label for="time">Time running forwards</label>
+                <input type="range" id="time" min="0" max="100" value="0" name="tenet">
+                <br>
+                <label for="emit">Time running backwards</label>
+                <input type="range" name="tenet" id="emit" min="0" max="100" value="100">
+                <!-- sadly I can't create a working puzzle or anything like that with html-->
+            </div>
+            <p>Lets say both sliders are interlinked: if one goes to the right, the other goes to the left.</p>
+
+            <label for="ok">Which value (0-100) would the second slider have if the first one had a value of...</label>
+            <br>
+            <label for="select1">65?</label>
+            <select name="select1" id="select1" required>
+                <option value="" disabled selected>Select a value</option>
+                <option value="25">25</option>
+                <option value="35" required>35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+            </select>
+            <label for="select2">23?</label>
+            <select name="select2" id="select2" required>
+                <option value="" disabled selected>Select a value</option>
+                <option value="75">75</option>
+                <option value="67">67</option>
+                <option value="83">83</option>
+                <option value="77" required>77</option>
+            </select>
+            <label for="select3">99?</label>
+            <select name="select3" id="select3" required>
+                <option value="" disabled selected>Select a value</option>
+                <option value="98">98</option>
+                <option value="2">2</option>
+                <option value="1" required>1</option>
+                <option value="99">99</option>
+            </select>
+            <br>
+            <button type="submit" onclick="if(document.getElementById('select1').value !== '35' ||
+               document.getElementById('select2').value !== '77' ||
+               document.getElementById('select3').value !== '1') return false;">Invert!</button>
+            <!-- once again same problem chatgpt helped me with -->
+        </form>
+    </main>
+
+</body>
+
+</html>
