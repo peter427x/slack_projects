@@ -8,117 +8,369 @@
 </head>
 
 <body>
-    <header>
-        <h1>Movies that'll take you through Time</h1>
-        <h2>Interstellar</h2>
-        <img src="imgs/interstellar1.jpeg" width="600px" height="350px" alt="Interstellar Spaceship">
-    </header>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th rowspan="2">Planet</th>
-                    <th rowspan="2">Time spent</th>
-                    <th>Equivalent Time </th>
-                    <th>Reason</th>
-                </tr>
-                <tr>
-                    <th>passed on Earth</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Miller's Planet</td>
-                    <td>3 hours</td>
-                    <td>21 years</td>
-                    <td>massive Gravity of Black Hole</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>The Dance of Time and Relativity!</h3>
-        <form action="https://de.wikipedia.org/wiki/Interstellar" target="_blank">
-            <p>If the team stayed for a single day, how many years would pass on Earth?</p>
-            <section>
-                <input type="radio" name="time" id="200">
-                <label for="200">200 years</label>
-                <input type="radio" name="time" id="156">
-                <label for="156">156 years</label>
-                <input type="radio" name="time" id="168" required>
-                <label for="168">168 years</label>
-                <input type="radio" name="time" id="100">
-                <label for="100">100 years</label>
-            </section>
-            <button type="submit" onclick="if(!document.getElementById('168').checked) return false;">Einstein!</button>
-            <!--chatgpt helped me block all the wrong answers (onclick=return false)-->
-        </form>
-    </main>
-    <hr>
-    <main>
-        <header>
-            <h2>Tenet</h2>
-            <img src="imgs/tenet1.jpg" alt="Tenet Cover" width="600" height="350">
-        </header>
-        <form action="https://de.wikipedia.org/wiki/Tenet_(Film)" target="_blank">
-            <div>
-                <p><u>“Only Those Who Master Time May Enter the Inversion”</u></p>
-                <label for="first">First Name</label>
-                <input type="text" name="first" id="first" placeholder="first name" required>
-            </div>
-            <div>
-                <label for="tsrit">emaN tsriT</label>
-                <input type="text" name="tirst" id="tirst" placeholder="name backwards" required>
-                <!-- you can write whatever since html doesn't allow for interlinked inputs that depend on each other (as far as I know) -->
-            </div>
-            <div>
-                <p>Both sliders depict Time. Time can run <b>forward</b> and <b>backward</b> (if you have 2 mice it
-                    might
-                    <br>
-                    as well run in <i>both directions</i> at the <i>same time</i>.)
-                </p>
-                <label for="time">Time running forwards</label>
-                <input type="range" id="time" min="0" max="100" value="0" name="tenet">
-                <br>
-                <label for="emit">Time running backwards</label>
-                <input type="range" name="tenet" id="emit" min="0" max="100" value="100">
-                <!-- sadly I can't create a working puzzle or anything like that with html-->
-            </div>
-            <p>Lets say both sliders are interlinked: if one goes to the right, the other goes to the left.</p>
+    <!--Jaqueline -->
 
-            <label for="ok">Which value (0-100) would the second slider have if the first one had a value of...</label>
-            <br>
-            <label for="select1">65?</label>
-            <select name="select1" id="select1" required>
-                <option value="" disabled selected>Select a value</option>
-                <option value="25">25</option>
-                <option value="35" required>35</option>
-                <option value="40">40</option>
-                <option value="45">45</option>
-            </select>
-            <label for="select2">23?</label>
-            <select name="select2" id="select2" required>
-                <option value="" disabled selected>Select a value</option>
-                <option value="75">75</option>
-                <option value="67">67</option>
-                <option value="83">83</option>
-                <option value="77" required>77</option>
-            </select>
-            <label for="select3">99?</label>
-            <select name="select3" id="select3" required>
-                <option value="" disabled selected>Select a value</option>
-                <option value="98">98</option>
-                <option value="2">2</option>
-                <option value="1" required>1</option>
-                <option value="99">99</option>
-            </select>
-            <br>
-            <button type="submit" onclick="if(document.getElementById('select1').value !== '35' ||
+    <header>
+        <h1>Movie Picks</h1>
+    </header>
+    <section>
+        <h2>Movies we love</h2>
+        <article>
+            <h3>Everything Everywhere All At Once</h3>
+            <img src="https://chicagomaroon.com/wp-content/uploads/2022/04/A24_MIfzFAe-900x600.jpg" alt="Movie Cover" />
+            <p>
+                Everything Everywhere All at Once is a 2022 American independent
+                absurdist comedy-drama film written and directed by Daniel Kwan and
+                Daniel Scheinert, who produced it with Anthony and Joe Russo and
+                Jonathan Wang. The film incorporates media from several genres and
+                film mediums, including surreal comedy, science fiction, fantasy,
+                martial arts films, immigrant narrative, and animation.
+                <a href="https://en.wikipedia.org/wiki/Michelle_Yeoh" target="_blank">
+                    Michelle Yeoh</a>
+                stars as Evelyn Quan Wang, a Chinese-American immigrant who, while
+                being audited by the IRS, discovers that she must connect with
+                parallel universe versions of herself to prevent a powerful being from
+                destroying the multiverse.
+            </p>
+
+            <div>
+                <h4>Overview</h4>
+                <table>
+                    <thead>
+                        <th>Aspect</th>
+                        <th>Detail</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Directors</td>
+                            <td>Daniel Kwan, Daniel Scheinert</td>
+                        </tr>
+                        <tr>
+                            <td>Genre</td>
+                            <td>Comedy / Sci-Fi / Action</td>
+                        </tr>
+                        <tr>
+                            <td>Release year</td>
+                            <td>2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h4>Starring</h4>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Michelle_Yeoh" target="_blank">
+                            Michelle Yeoh</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Stephanie_Hsu" target="_blank">Stephanie Hsu</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Ke_Huy_Quan" target="_blank">Ke Huy Quan</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/James_Hong" target="_blank">James Hong</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Jamie_Lee_Curtis" target="_blank">Jamie Lee Curtis</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>It's quiztime!</h4>
+                <p>
+                    In Everything Everywhere All at Once, one universe shows humans with
+                    a rather strange twist — what do they have instead of regular hands?
+                </p>
+                <form action="/submit">
+                    <input type="radio" name="hands" id="Tentacels" value="Wrong" />
+                    <label for="Tentacles">Tentacles</label> <br />
+
+                    <input type="radio" name="hands" id="Hotdog fingers" value="Right" />
+                    <label for="Hotdog fingers">Hotdog fingers</label> <br />
+
+                    <input type="radio" name="hands" id="Robotic hands" value="Wrong" />
+                    <label for="Robotic hands">Robotic hands</label> <br />
+
+                    <input type="radio" name="hands" id="No hands" value="Wrong" />
+                    <label for="No hands">No hands</label> <br />
+
+                    <button>Submit!</button>
+                </form>
+            </div>
+        </article>
+        <h2>Special: Movies that'll take you through Time</h2>
+
+
+
+        <article> <!--Peter-->
+            <header>
+
+                <h3>Interstellar</h3>
+                <img src="https://www.sueddeutsche.de/2022/06/22/293b4985-57f0-4358-97d3-e8dc54cde297.jpeg?q=60&fm=jpeg&width=1000&rect=64%2C162%2C1172%2C659"
+                    width="600px" height="350px" alt="Interstellar Spaceship">
+            </header>
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Planet</th>
+                            <th rowspan="2">Time spent</th>
+                            <th>Equivalent Time </th>
+                            <th>Reason</th>
+                        </tr>
+                        <tr>
+                            <th>passed on Earth</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Miller's Planet</td>
+                            <td>3 hours</td>
+                            <td>21 years</td>
+                            <td>massive Gravity of Black Hole</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>The Dance of Time and Relativity!</h4>
+                <form action="https://de.wikipedia.org/wiki/Interstellar" target="_blank">
+                    <p>If the team stayed for a single day, how many years would pass on Earth?</p>
+                    <section>
+                        <input type="radio" name="time" id="200">
+                        <label for="200">200 years</label>
+                        <input type="radio" name="time" id="156">
+                        <label for="156">156 years</label>
+                        <input type="radio" name="time" id="168" required>
+                        <label for="168">168 years</label>
+                        <input type="radio" name="time" id="100">
+                        <label for="100">100 years</label>
+                    </section>
+                    <button type="submit"
+                        onclick="if(!document.getElementById('168').checked) return false;">Einstein!</button>
+                    <!--chatgpt helped me block all the wrong answers (onclick=return false)-->
+                </form>
+            </main>
+            <hr>
+            <header>
+                <h3>Tenet</h3>
+                <img src="https://www.musikexpress.de/wp-content/uploads/2020/08/25/12/tenet-00-titelbild-foto-warner-scaled.jpg"
+                    alt="Tenet Cover" width="600" height="350">
+            </header>
+            <main>
+                <form action="https://de.wikipedia.org/wiki/Tenet_(Film)" target="_blank">
+                    <div>
+                        <p><u>“Only Those Who Master Time May Enter the Inversion”</u></p>
+                        <label for="first">First Name</label>
+                        <input type="text" name="first" id="first" placeholder="first name" required>
+                    </div>
+                    <div>
+                        <label for="tsrit">emaN tsriT</label>
+                        <input type="text" name="tirst" id="tirst" placeholder="name backwards" required>
+                        <!-- you can write whatever since html doesn't allow for interlinked inputs that depend on each other (as far as I know) -->
+                    </div>
+                    <div>
+                        <p>Both sliders depict Time. Time can run <b>forward</b> and <b>backward</b> (if you have 2 mice
+                            it
+                            might
+                            <br>
+                            as well run in <i>both directions</i> at the <i>same time</i>.)
+                        </p>
+                        <label for="time">Time running forwards</label>
+                        <input type="range" id="time" min="0" max="100" value="0" name="tenet">
+                        <br>
+                        <label for="emit">Time running backwards</label>
+                        <input type="range" name="tenet" id="emit" min="0" max="100" value="100">
+                        <!-- sadly I can't create a working puzzle or anything like that with html-->
+                    </div>
+                    <p>Lets say both sliders are interlinked: if one goes to the right, the other goes to the left.</p>
+
+                    <label for="ok">Which value (0-100) would the second slider have if the first one had a value
+                        of...</label>
+                    <br>
+                    <label for="select1">65?</label>
+                    <select name="select1" id="select1" required>
+                        <option value="" disabled selected>Select a value</option>
+                        <option value="25">25</option>
+                        <option value="35" required>35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+                    </select>
+                    <label for="select2">23?</label>
+                    <select name="select2" id="select2" required>
+                        <option value="" disabled selected>Select a value</option>
+                        <option value="75">75</option>
+                        <option value="67">67</option>
+                        <option value="83">83</option>
+                        <option value="77" required>77</option>
+                    </select>
+                    <label for="select3">99?</label>
+                    <select name="select3" id="select3" required>
+                        <option value="" disabled selected>Select a value</option>
+                        <option value="98">98</option>
+                        <option value="2">2</option>
+                        <option value="1" required>1</option>
+                        <option value="99">99</option>
+                    </select>
+                    <br>
+                    <button type="submit" onclick="if(document.getElementById('select1').value !== '35' ||
                document.getElementById('select2').value !== '77' ||
                document.getElementById('select3').value !== '1') return false;">Invert!</button>
-            <!-- once again same problem chatgpt helped me with -->
-        </form>
-    </main>
+                    <!-- once again same problem chatgpt helped me with -->
+                </form>
+            </main>
+        </article>
+    </section>
+    <br>
+    <br>
+    <section> <!--Mikhail-->
+        <main>
 
+            <h1>In space, no one can hear you scream in disappointment. On earth, no one cares.</h1>
+            <h1>Alien: Earth. A short review</h1>
+            <hr>
+
+            <article>
+                <h2>Plot</h2>
+                <p>In the year 2120, Earth is ruled by powerful corporations and advanced technologies—cyborgs,
+                    synthetics,
+                    and for the first time, <b>“hybrids”</b> (artificial bodies with uploaded human consciousness).<br>
+                    A deep-spaceresearch vessel, the <b>Maginot</b>, belonging to the ­corporate giant <b>Weyland‑Yutani
+                        Corporation</b>,
+                    crash-lands on Earth carrying alien specimens.<br>
+                    One of the hybrid prototypes, a woman named <b>Wendy</b>, along
+                    with a team of hybrids and other operatives, are drawn into the wreckage and discover a threat far
+                    more
+                    ancient and deadly than anyone expected.<br>
+                    The series explores not only survival against extraterrestrial
+                    horror, but also what it means to be human in a world of machines and corporate power.
+                </p>
+            </article>
+
+            <p>
+                Source: <a href="https://www.imdb.com/title/tt13623632/">IMDB</a>
+            </p>
+
+            <img src="https://ironstudios.eu/cdn/shop/articles/Untitled_design_1_1dbbe55d-b3e3-4d6a-8f25-43f7b4a2006f.png?v=1754480068"
+                width="300px" alt="Poster">
+
+            <section>
+                <h2>Review list</h2>
+                <h3>Positive</h3>
+                <ul>
+                    <li><strong>Special effects:</strong> Almost full movie level</li>
+                    <li><strong>Episode 5:</strong> Catching atmosphere of first movie</li>
+                    <li><strong>Ocellus:</strong> Most interesting character</li>
+                </Ul>
+
+                <h3>Negative</h3>
+                <ul>
+                    <li><em>Character decisions:</em> Actions & consequences just don't feel right</li>
+                    <li><em>Main character Wendy:</em> Too overpowered (How the hell could she decapitate a full grown
+                        xenomorph with
+                        a kitchen knife, taking control of technology & manipulate another xenomorph?!) </li>
+                    <li><em>Xenomorph:</em>Suit looks cheap, movements are clumsy, is simply present but doesn't appear
+                        to
+                        be the
+                        central element</li>
+                    <li><em>Dialogues:</em>too many, too long, too boring</li>
+                    <li><em>Logic issues:</em> Doesn't fit into the entire story telling</li>
+                </ul>
+            </section>
+
+            <h2>Movie comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Movie</th>
+                        <th>Release Date</th>
+                        <th>Box Office</th>
+                        <th>Director</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alien</td>
+                        <td>1979</td>
+                        <td>$188 mil.</td>
+                        <td>Ridley Scott</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aliens</td>
+                        <td>1986</td>
+                        <td>$183 mil.</td>
+                        <td>James Cameron</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alien<sup>3</sup></td>
+                        <td>1992</td>
+                        <td>$180 mil.</td>
+                        <td>David Fincher</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alien Resurrection</td>
+                        <td>1997</td>
+                        <td>$161.4 mil.</td>
+                        <td>Jean-Pierre Jeunet</td>
+                    </tr>
+
+                    <tr>
+                        <td>Prometheus</td>
+                        <td>2012</td>
+                        <td>$403.4 mil.</td>
+                        <td>Ridley Scott</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alien: Covenant</td>
+                        <td>2017</td>
+                        <td>$240.9 mil.</td>
+                        <td>Ridley Scott</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alien: Romulus</td>
+                        <td>2024</td>
+                        <td>$350.9 mil.</td>
+                        <td>Fede Alvarez</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div>
+                <h2>My own movie ranking</h2>
+                <ol>
+                    <li>Aliens</li>
+                    <li>Alien</li>
+                    <li>Alien<sup>3</sup></li>
+                    <li>Prometheus</li>
+                    <li>Alien:Romulus</li>
+                    <li>Alien:Covenant</li>
+                    <li>Alien:Earth</li>
+                </ol>
+            </div>
+        </main>
+
+        <h2>Final rating</h2>
+        &#9760;&#9760; / &#9760;&#9760;&#9760;&#9760;&#9760;<br>
+        <em><q>Game over, man! Game over!</q></em><br>
+        -Private William L. Hudson-
+
+        <footer>
+            <h2>Other reviews:</h2>
+            <ul>
+                <li><a href="https:///www.youtube.com/watch?v=zcAzFXHHxZU">Critical Drinker</a></li>
+                <li><a href="https://www.youtube.com/watch?v=IJZ-IKDWFLE">Nerdrotic</a></li>
+            </ul>
+        </footer>
+
+    </section>
 </body>
 
 </html>
-
